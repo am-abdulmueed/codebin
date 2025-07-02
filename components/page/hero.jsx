@@ -24,7 +24,7 @@ export default function Hero() {
                 </p>
                 <div className="flex gap-3 mt-4">
                     <GetStartedBtn />
-                    <Link href="https:github.com/am-abdulmueed/codebin">
+                    <Link href="/s/https:github.com/am-abdulmueed/codebin">
                         <Button variant="outline">Github<Stars className="h-4 w-4" /></Button>
                     </Link>
                 </div>
