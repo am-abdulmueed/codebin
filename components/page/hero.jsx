@@ -11,9 +11,10 @@ export default function Hero() {
             <div className="grid mx-auto max-w-2xl gap-4 text-center place-items-center">
                 <div className="flex -mb-1 items-center gap-2 bg-background/50 backdrop-blur-lg border-border border rounded-md w-fit px-3 py-0.5">
                     <StarsIcon className="h-3 w-3" />
-                    <a href="https://github.com/am-abdulmueed/am-codebin" target="_blank" className="text-sm text-foreground/80 hover:underline">
-                        Give us a Star on Github
-                    </a>
+                    <a href="https://github.com/am-abdulmueed/codebin" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground/80 hover:underline">
+                       ⭐ Give us a Star on GitHub
+                     </a>
+
                     <ChevronRight className="h-3 w-3" />
                 </div>
                 <h1 className="font-geist text-4xl font-medium tracking-tighter bg-gradient-to-r from-zinc-800 via-stone-800/80 to-purple-800/70 dark:from-zinc-100 dark:via-stone-200/50 dark:to-purple-200/70 bg-clip-text text-transparent sm:text-5xl md:text-6xl">
@@ -23,10 +24,16 @@ export default function Hero() {
                     Codebin makes sharing code snippets with output simple. Whether you're a developer or not, you can view and share syntax-highlighted snippets effortlessly.
                 </p>
                 <div className="flex gap-3 mt-4">
-                    <GetStartedBtn />
-                    <Link href="/s/https:github.com/am-abdulmueed/codebin">
-                        <Button variant="outline">Github<Stars className="h-4 w-4" /></Button>
-                    </Link>
+                  <GetStartedBtn />
+                  <a
+                    href="https://github.com/am-abdulmueed/codebin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline">
+                      Github <Stars className="h-4 w-4" />
+                    </Button>
+                  </a>
                 </div>
             </div>
             <TechStack />
